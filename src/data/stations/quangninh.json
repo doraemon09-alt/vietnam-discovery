@@ -1,0 +1,236 @@
+{
+  "stationId": "quangninh",
+  "stationName": {
+    "vi": "QUẢNG NINH",
+    "en": "QUANG NINH",
+    "ru": "КУАНГНИНЬ"
+  },
+  "coverImage": "quangninh/quangninh.jpg",
+  "introImage": "quangninh/quangninh_intro.jpg",
+  "introTitle": {
+    "vi": "QUẢNG NINH - KỲ QUAN NƠI BIỂN XANH",
+    "en": "QUANG NINH - WONDER BY THE BLUE SEA",
+    "ru": "КУАНГНИНЬ - ЧУДО У СИНЕГО МОРЯ"
+  },
+  "introText": {
+    "vi": "Quảng Ninh là một trọng điểm kinh tế và du lịch lớn, sở hữu di sản thiên nhiên thế giới Vịnh Hạ Long đã 2 lần được UNESCO công nhận.<br><br>Với đường bờ biển dài 250 km, hàng nghìn hòn đảo và nhiều cảnh quan biển đảo độc đáo, Quảng Ninh là điểm đến biểu tượng của vùng Đông Bắc Việt Nam.",
+    "en": "Quang Ninh is a major economic and tourism hub, home to the Ha Long Bay World Natural Heritage site, recognized twice by UNESCO.<br><br>With a 250 km coastline, thousands of islands and remarkable coastal scenery, Quang Ninh is a signature destination in northern Vietnam.",
+    "ru": "Куангнинь — крупный экономический и туристический центр, где находится объект Всемирного природного наследия бухта Халонг, дважды признанный ЮНЕСКО.<br><br>С береговой линией длиной 250 км, тысячами островов и уникальными морскими ландшафтами Куангнинь является знаковой туристической точкой Северного Вьетнама."
+  },
+  "stats": [
+    {
+      "num": "250",
+      "text": { "vi": "km đường bờ biển", "en": "km of coastline", "ru": "км береговой линии" }
+    },
+    {
+      "num": "2000+",
+      "text": { "vi": "hòn đảo lớn nhỏ", "en": "islands", "ru": "островов" }
+    },
+    {
+      "num": "02",
+      "text": { "vi": "lần công nhận UNESCO", "en": "UNESCO recognitions", "ru": "признания ЮНЕСКО" }
+    },
+    {
+      "num": "∞",
+      "text": { "vi": "thiên nhiên và văn hóa biển", "en": "nature and marine culture", "ru": "природа и морская культура" }
+    }
+  ],
+  "exploreTitle": {
+    "vi": "NHỮNG BIỂU TƯỢNG CỦA QUẢNG NINH",
+    "en": "QUANG NINH'S ICONS",
+    "ru": "СИМВОЛЫ КУАНГНИНЯ"
+  },
+  "exploreText": {
+    "vi": "Quảng Ninh sở hữu những danh lam thắng cảnh nổi tiếng trên cả biển lẫn núi, từ vịnh Hạ Long đến Yên Tử và các đảo ven biển.",
+    "en": "Quang Ninh has famous landmarks both on the sea and in the mountains, from Ha Long Bay to Yen Tu and the coastal islands.",
+    "ru": "Куангнинь славится знаменитыми природными объектами как на море, так и в горах: от бухты Халонг до Енцзу и прибрежных островов."
+  },
+  "places": [
+    {
+      "id": "halong",
+      "image": "quangninh/landmark/halong.jpg",
+      "name": { "vi": "Vịnh Hạ Long", "en": "Ha Long Bay", "ru": "Бухта Халонг" },
+      "description": {
+        "vi": "Di sản Thiên nhiên Thế giới với hàng ngàn đảo đá vôi kỳ vĩ và hệ thống hang động nổi tiếng.",
+        "en": "World Natural Heritage with thousands of limestone islands and famous cave systems.",
+        "ru": "Всемирное природное наследие с тысячами известняковых островов и знаменитыми системами пещер."
+      }
+    },
+    {
+      "id": "coto",
+      "image": "quangninh/landmark/coto.jpg",
+      "name": { "vi": "Đảo Cô Tô", "en": "Co To Island", "ru": "Остров Кото" },
+      "description": {
+        "vi": "Nổi tiếng với nét đẹp hoang sơ, làn nước biển trong xanh cùng những bãi cát trắng mịn trải dài.",
+        "en": "Famous for its pristine beauty, clear blue water, and long stretches of white sand.",
+        "ru": "Известен своей первозданной красотой, чистой голубой водой и длинными белыми песчаными пляжами."
+      }
+    },
+    {
+      "id": "yentu",
+      "image": "quangninh/landmark/yentu.jpg",
+      "name": { "vi": "Yên Tử", "en": "Yen Tu", "ru": "Йенту" },
+      "description": {
+        "vi": "Trung tâm Phật giáo lớn của Việt Nam, gắn liền với lịch sử nhà Trần và Thiền phái Trúc Lâm.",
+        "en": "A major Buddhist center of Vietnam, associated with the Tran dynasty and Truc Lam Zen sect.",
+        "ru": "Крупный буддийский центр Вьетнама, связанный с династией Чан и дзен-буддийской сектой Чуклам."
+      }
+    }
+  ],
+  "deepStoriesTitle": {
+    "vi": "NHỮNG CÂU CHUYỆN SAU MỖI ĐỊA DANH",
+    "en": "STORIES BEHIND EACH LANDMARK",
+    "ru": "ИСТОРИИ ЗА ДОСТОПРИМЕЧАТЕЛЬНОСТЯМИ"
+  },
+  "deepStories": [
+    {
+      "image": "halong_cave.jpg",
+      "title": { "vi": "Vịnh Hạ Long", "en": "Ha Long Bay", "ru": "Бухта Халонг" },
+      "p1": { "vi": "Vịnh Hạ Long được UNESCO công nhận là di sản thiên nhiên thế giới nhờ giá trị thẩm mỹ và địa chất độc đáo.", "en": "Ha Long Bay was recognized by UNESCO as a world heritage site thanks to its exceptional aesthetics and unique geology.", "ru": "Бухта Халонг была признана ЮНЕСКО объектом Всемирного наследия благодаря исключительной эстетике и уникальной геологии." },
+      "p2": { "vi": "Hàng ngàn hòn đảo đá vôi, hang động, chế độ thủy văn và hệ sinh thái biển tạo nên cảnh quan ngoạn mục, đậm chất miền biển.", "en": "Thousands of limestone islands, caves, water systems and marine ecosystems create a magnificent landscape, deeply rooted in coastal life.", "ru": "Тысячи известняковых островов, пещер, водных систем и морских экосистем создают величественный ландшафт, основанный на жизни у моря." }
+    },
+    {
+      "image": "coto_beach.jpg",
+      "title": { "vi": "Đảo Cô Tô", "en": "Co To Island", "ru": "Остров Кото" },
+      "p1": { "vi": "Đảo Cô Tô nổi tiếng với vẻ đẹp hoang sơ, những bãi cát trắng mịn và làn nước trong xanh quanh năm.", "en": "Co To Island is famous for its wild beauty, smooth white sand beaches and clear blue waters year-round.", "ru": "Остров Кото известен своей первозданной красотой, белыми песчаными пляжами и прозрачной голубой водой круглый год." },
+      "p2": { "vi": "Đây là nơi lý tưởng để đón bình minh, tham gia các hoạt động biển và trải nghiệm văn hóa đảo của người dân địa phương.", "en": "It is an ideal place to watch the sunrise, enjoy sea activities, and experience the island culture of the local people.", "ru": "Это идеальное место для наблюдения за рассветом, занятий на воде и знакомства с островной культурой местных жителей." }
+    }
+  ],
+  "seasons": [
+    {
+      "icon": "🌤️",
+      "title": { "vi": "Mùa xuân", "en": "Spring", "ru": "Весна" },
+      "description": { "vi": "Thời tiết dễ chịu, ít mưa, rất phù hợp cho du lịch biển và ngắm cảnh vịnh.", "en": "Mild weather and low rainfall make it great for beach trips and bay sightseeing.", "ru": "Мягкая погода и небольшое количество дождей идеально подходят для пляжного отдыха и осмотра залива." },
+      "image": "quangninh_spring.jpg"
+    },
+    {
+      "icon": "☀️",
+      "title": { "vi": "Mùa hè", "en": "Summer", "ru": "Лето" },
+      "description": { "vi": "Là mùa thường có lượng khách du lịch cao nhất, thích hợp cho biển và các hoạt động ngoài trời.", "en": "This is the peak tourist season, ideal for beaches and outdoor activities.", "ru": "Это пик туристического сезона, идеальный для пляжей и активного отдыха на открытом воздухе." },
+      "image": "quangninh_summer.jpg"
+    },
+    {
+      "icon": "🍂",
+      "title": { "vi": "Mùa thu", "en": "Autumn", "ru": "Осень" },
+      "description": { "vi": "Bầu trời trong xanh, biển lặng, thích hợp cho chụp ảnh và nghỉ dưỡng yên bình.", "en": "Clear skies and calm seas make this a favorite time for photography and relaxing getaways.", "ru": "Ясное небо и спокойное море делают это отличным временем для фотографий и спокойного отдыха." },
+      "image": "quangninh_autumn.jpg"
+    },
+    {
+      "icon": "❄️",
+      "title": { "vi": "Mùa đông", "en": "Winter", "ru": "Зима" },
+      "description": { "vi": "Khí hậu mát mẻ, ít người hơn, rất thích hợp cho khám phá văn hóa và núi rừng.", "en": "Cooler weather and fewer crowds make it a great time for cultural and mountain exploration.", "ru": "Более прохладная погода и меньше туристов делают это отличным временем для культурных и горных походов." },
+      "image": "quangninh_winter.jpg"
+    }
+  ],
+  "natureTitle": {
+    "vi": "THIÊN NHIÊN BIỂN ĐẢO QUẢNG NINH",
+    "en": "QUANG NINH'S MARINE NATURE",
+    "ru": "МОРСКАЯ ПРИРОДА КУАНГНИНЯ"
+  },
+  "natureText": {
+    "vi": "Quảng Ninh nổi bật với bờ biển xanh mướt, hàng nghìn đảo đá vôi, rừng nhiệt đới hải đảo và những hang động kỳ vĩ.",
+    "en": "Quang Ninh stands out for its green coastline, thousands of limestone islands, island forests and magnificent caves.",
+    "ru": "Куангнинь выделяется зелеными берегами, тысячами известняковых островов, островными тропическими лесами и величественными пещерами."
+  },
+  "foodTitle": {
+    "vi": "ẨM THỰC QUẢNG NINH",
+    "en": "QUANG NINH CUISINE",
+    "ru": "КУАНГНИНЬСКАЯ КУХНЯ"
+  },
+  "foodText": {
+    "vi": "Ẩm thực Quảng Ninh nổi tiếng với hải sản tươi ngon, đặc sản vùng biển và những món ăn mang đậm hương vị quê hương.",
+    "en": "Quang Ninh cuisine is famous for fresh seafood, local specialties and dishes rich with coastal flavor.",
+    "ru": "Куангниньская кухня славится свежими морепродуктами, местными деликатесами и блюдами с ярким морским вкусом."
+  },
+  "foods": [
+    {
+      "image": "quangninh/food/cha_muc.jpg",
+      "name": { "vi": "Chả mực Hạ Long", "en": "Ha Long Squid Sausage", "ru": "Халонгские кальмаровые котлеты" },
+      "description": {
+        "vi": "Món đặc sản trứ danh giã tay truyền thống, giòn sần sật, ngọt đậm đà tự nhiên.",
+        "en": "Famous traditional hand-pounded specialty, crunchy and naturally sweet.",
+        "ru": "Знаменитое традиционное блюдо ручной работы, хрустящее и сладкое на вкус."
+      },
+      "fact": { "vi": "Được giã tay để giữ độ dai sần sật và hương vị mực tươi nguyên chất.", "en": "It is hand-pounded to keep the chewy bite and the natural taste of fresh squid.", "ru": "Его вручную растирают, чтобы сохранить упругую текстуру и вкус свежего кальмара." }
+    },
+    {
+      "image": "quangninh/food/sam.png",
+      "name": { "vi": "Sam biển", "en": "Horseshoe Crab", "ru": "Mечехвост" },
+      "description": {
+        "vi": "Món ăn mang đậm hương vị biển đảo với phần thịt và trứng vô cùng thơm ngon, béo ngậy.",
+        "en": "A flavorful island dish featuring rich, savory meat and delicious roe.",
+        "ru": "Блюдо с ярким вкусом морепродуктов, отличающееся жирным мясом и вкусной икрой." }
+      ,
+      "fact": { "vi": "Được xem là một trong những đặc sản biển đáng thử nhất của Quảng Ninh.", "en": "Considered one of the most must-try marine specialties of Quang Ninh.", "ru": "Считается одной из самых известных морских деликатесов Куангниня." }
+    },
+    {
+      "image": "quangninh/food/ngan.png",
+      "name": { "vi": "Ngán", "en": "Austriella Corrugata", "ru": "Морские черенки"},
+      "description": {
+        "vi": "Đặc sản hải sản bổ dưỡng riêng có của vùng biển Quảng Ninh.",
+        "en": "A highly nutritious seafood specialty unique to the seas of Quang Ninh.",
+        "ru": "Питательный морепродукт, являющийся уникальным деликатесом провинции Куангнинь."
+      },
+      "fact": { 
+    "vi": "Thường được chế biến thành các món như ngán hấp, rượu ngán, đặc biệt nổi tiếng tại Quảng Yên và Bãi Cháy.", "en": "Often prepared as steamed dishes or infused in wine, especially famous in Quang Yen and Bai Chay.", "ru": "Часто готовится на пару или используется для приготовления настойки, особенно знаменит в Куангйен и Байчай."}
+    }
+  ],
+  "cultureTitle": {
+    "vi": "VĂN HÓA BIỂN VÀ LỄ HỘI QUẢNG NINH",
+    "en": "QUANG NINH'S MARINE CULTURE AND FESTIVALS",
+    "ru": "МОРСКАЯ КУЛЬТУРА И ФЕСТИВАЛИ КУАНГНИНЯ"
+  },
+  "cultureIntro": {
+    "vi": "Văn hóa Quảng Ninh được hình thành từ biển, ngư nghiệp, tín ngưỡng và các lễ hội địa phương gắn với đời sống của người dân ven biển.",
+    "en": "Quang Ninh culture developed from the sea, fishing life, local beliefs and community festivals connected to coastal living.",
+    "ru": "Культура Куангниня сложилась под влиянием моря, рыболовства, местных верований и праздников, связанных с прибрежной жизнью." 
+  },
+  "cultures": [
+    {
+      "icon": "🧭",
+      "image": "culture_fishing.jpg",
+      "title": { "vi": "Văn hóa biển", "en": "Marine culture", "ru": "Морская культура" },
+      "description": { "vi": "Đời sống của cư dân ven biển gắn chặt với nghề biển, truyền thống ngư nghiệp và những câu chuyện dân gian phong phú.", "en": "The life of coastal communities is deeply linked to fishing traditions, marine heritage and rich folklore.", "ru": "Жизнь прибрежных общин тесно связана с рыболовством, морским наследием и богатым фольклором." }
+    },
+    {
+      "icon": "⛩️",
+      "image": "yen_tu_pagoda.jpg",
+      "title": { "vi": "Tâm linh Yên Tử", "en": "Yen Tu spirituality", "ru": "Духовность Енцзу" },
+      "description": { "vi": "Yên Tử là trung tâm Phật giáo của Việt Nam, lưu giữ các di tích chùa, tháp và nhiều lễ hội tôn giáo đặc sắc.", "en": "Yen Tu is the Buddhist heartland of Vietnam, preserving temples, pagodas and many meaningful religious festivals.", "ru": "Енцзу — буддийский центр Вьетнама, хранящий храмы, пагоды и множество значимых религиозных фестивалей." }
+    },
+    {
+      "icon": "🎉",
+      "image": "festival_halong.jpg",
+      "title": { "vi": "Lễ hội địa phương", "en": "Local festivals", "ru": "Местные фестивали" },
+      "description": { "vi": "Các lễ hội như Yên Tử, đền Cửa Ông và Carnaval Hạ Long phản ánh sự phong phú của đời sống cộng đồng.", "en": "Festivals such as Yen Tu, Cua Ong Temple and Ha Long Carnival reflect the richness of community life.", "ru": "Фестивали, такие как Енцзу, храм Куа Онг и карнавал Халонг, отражают богатую общественную жизнь региона." }
+    },
+    {
+      "icon": "🌊",
+      "image": "coastal_life.jpg",
+      "title": { "vi": "Cuộc sống ven biển", "en": "Coastal life", "ru": "Прибрежная жизнь" },
+      "description": { "vi": "Những bến cảng, chợ biển, bãi tắm và ngư dân tạo nên nhịp sống rất đặc trưng của Quảng Ninh.", "en": "Ports, coastal markets, beaches and fishing communities together create the distinctive rhythm of Quang Ninh.", "ru": "Порты, прибрежные рынки, пляжи и рыбацкие сообщества создают характерный ритм жизни Куангниня." }
+    }
+  ],
+  "factText": {
+    "vi": "Quảng Ninh là nơi hội tụ biển, núi, văn hóa và kinh tế biển của Việt Nam.",
+    "en": "Quang Ninh is where the sea, mountains, culture and marine economy of Vietnam come together.",
+    "ru": "Куангнинь — это место, где соединяются море, горы, культура и морская экономика Вьетнама."
+  },
+  "quiz": {
+    "vi": [
+      { "q": "Vịnh Hạ Long được UNESCO công nhận lần đầu tiên vào năm nào?", "a": ["1994", "2000", "1990", "2005"], "correct": 0 },
+      { "q": "Địa điểm nào là trung tâm Phật giáo lớn của Việt Nam?", "a": ["Cô Tô", "Yên Tử", "Đồ Sơn", "Bãi Cháy"], "correct": 1 },
+      { "q": "Món ăn nào là đặc sản nổi tiếng của Quảng Ninh?", "a": ["Bánh mì thịt", "Chả mực Hạ Long", "Bún bò Huế", "Phở Bắc"], "correct": 1 }
+    ],
+    "en": [
+      { "q": "In which year was Ha Long Bay first recognized by UNESCO?", "a": ["1994", "2000", "1990", "2005"], "correct": 0 },
+      { "q": "Which place is the major Buddhist center of Vietnam?", "a": ["Co To", "Yen Tu", "Do Son", "Bai Chay"], "correct": 1 },
+      { "q": "Which dish is a famous specialty of Quang Ninh?", "a": ["Banh mi", "Ha Long squid sausage", "Bun bo Hue", "Pho Bac"], "correct": 1 }
+    ],
+    "ru": [
+      { "q": "В каком году бухта Халонг была впервые признана ЮНЕСКО?", "a": ["1994", "2000", "1990", "2005"], "correct": 0 },
+      { "q": "Какое место является главным буддийским центром Вьетнама?", "a": ["Ко То", "Енцзу", "До Сон", "Бай Чай"], "correct": 1 },
+      { "q": "Какое блюдо является знаменитым деликатесом Куангниня?", "a": ["Бань ми", "Халонгские кальмаровые котлеты", "Бун бо Хуэ", "Фо Бак"], "correct": 1 }
+    ]
+  }
+}

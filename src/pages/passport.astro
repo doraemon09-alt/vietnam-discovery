@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/layout.astro';
+import '../styles/passport.css';
+import passportData from '../data/passport.json';
+---
+
+<Layout title="Vietnam Discovery Passport">
+    
+    <!--passport-page-->
+    <main class="passport-page">
+        <section class="passport">
+            <header class="passport-header">
+                <h1 data-i18n="passport-title">
+                    VIETNAM DISCOVERY PASSPORT
+                </h1>
+                <p data-i18n="passport-subtitle">
+                    YOUR JOURNEY THROUGH VIETNAM
+                </p>
+            </header>
+
+            <div class="passport-grid" id="passportGrid"></div>
+            
+            <a href="/" class="back-button">🏠︎</a>
+
+        </section>
+    </main>
+
+    <script define:vars={{ passportData }}>
+        window.passportData = passportData;
+    </script>
+    <script src="/js/passport.js" is:inline></script>
+    
+</Layout>

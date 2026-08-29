@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/layout.astro';
+import '../styles/landing.css'; // Kéo file index.css gốc
+---
+<Layout title="Vietnam Discovery">
+    <!--lang-screen-->
+    <div class="screen" id="languageScreen">
+        <div class="screen-inner">
+            <div class="big-symbol">✦</div>
+            <h1>VIETNAM<br>DISCOVERY</h1>
+            <div class="subtitle">
+                CHOOSE YOUR LANGUAGE
+            </div>
+            <div class="language-options">
+                <a href="passport?lang=vi" class="language-btn">
+                    <strong>🇻🇳 TIẾNG VIỆT</strong>
+                    <span>Khám phá Việt Nam</span>
+                </a>
+                <a href="passport?lang=en" class="language-btn">
+                    <strong>🇬🇧 ENGLISH</strong>
+                    <span>Discover Vietnam</span>
+                </a>
+                <a href="passport?lang=ru" class="language-btn">
+                    <strong>🇷🇺 РУССКИЙ</strong>
+                    <span>Откройте Вьетнам</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</Layout>

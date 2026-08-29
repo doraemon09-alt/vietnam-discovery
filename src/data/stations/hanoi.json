@@ -1,0 +1,260 @@
+{
+  "stationId": "hanoi",
+  "stationName": {
+      "vi": "HÀ NỘI",
+      "en": "HANOI",
+      "ru": "ХАНОЙ"
+  },
+  "coverImage": "hanoi/hanoi.jpg",
+  "introImage": "hanoi/landmark/Hoan_Kiem_Lake_photo2.jpg",
+  "introTitle": {
+    "vi": "HÀ NỘI – NƠI QUÁ KHỨ GẶP GỠ HIỆN TẠI",
+    "en": "HANOI – WHERE THE PAST MEETS THE PRESENT",
+    "ru": "ХАНОЙ – МЕСТО, ГДЕ ПРОШЛОЕ ВСТРЕЧАЕТСЯ С НАСТОЯЩИМ"
+  },
+  "introText": {
+    "vi": "Hà Nội là thủ đô của Việt Nam và là một trong những thành phố có lịch sử lâu đời nhất của đất nước.<br><br>Thành phố từng mang tên Thăng Long và trải qua nhiều giai đoạn phát triển quan trọng.<br><br>Ngày nay, Hà Nội là trung tâm chính trị, văn hóa và giáo dục của Việt Nam.",
+    "en": "Hanoi is the capital of Vietnam and one of the country's oldest cities.<br><br>It was once called Thăng Long and went through many important periods of development.<br><br>Today, Hanoi is the political, cultural and educational center of Vietnam.",
+    "ru": "Ханой — столица Вьетнама и один из древнейших городов страны.<br><br>Ранее он назывался Тхэнг Лонг и пережил много важных периодов развития.<br><br>Сегодня Ханой — политический, культурный и образовательный центр Вьетнама."
+  },
+  "stats": [
+    {
+      "num": "1000+",
+      "text": { "vi": "năm lịch sử", "en": "years of history", "ru": "лет истории" }
+    },
+    {
+      "num": "01",
+      "text": { "vi": "Thủ đô Việt Nam", "en": "Capital of Vietnam", "ru": "Столица Вьетнама" }
+    },
+    {
+      "num": "36",
+      "text": { "vi": "phố phường", "en": "districts and streets", "ru": "улицы и кварталы" }
+    },
+    {
+      "num": "∞",
+      "text": { "vi": "Văn hóa – lịch sử", "en": "Culture and history", "ru": "Культура и история" }
+    }
+  ],
+  "exploreTitle": {
+    "vi": "NHỮNG BIỂU TƯỢNG CỦA HÀ NỘI",
+    "en": "HANOI'S ICONS",
+    "ru": "СИМВОЛЫ ХАНОЯ"
+  },
+  "exploreText": {
+    "vi": "Hà Nội sở hữu nhiều di tích lịch sử và công trình đã trở thành biểu tượng của thủ đô.",
+    "en": "Hanoi has many historical sites and structures that have become symbols of the capital.",
+    "ru": "У Ханоя много исторических мест и построек, ставших символами столицы."
+  },
+  "places": [
+    {
+      "id": "hoan-kiem",
+      "image": "hanoi/landmark/Hoan_Kiem_Lake_photo.jpg",
+      "name": { "vi": "Hồ Hoàn Kiếm", "en": "Hoan Kiem Lake", "ru": "Озеро Хоан Кием" },
+      "description": {
+        "vi": "Hồ nước nằm giữa trung tâm lịch sử Hà Nội, nổi bật với Tháp Rùa và đền Ngọc Sơn.",
+        "en": "A lake in the heart of Hanoi's historic center, famous for Turtle Tower and Ngoc Son Temple.",
+        "ru": "Озеро в центре исторического Ханоя, известное Башней Черепахи и храмом Нгок Шон."
+      }
+    },
+    {
+      "id": "old-quarter",
+      "image": "hanoi/landmark/old_quarter.jpg",
+      "name": { "vi": "Phố cổ Hà Nội", "en": "Hanoi Old Quarter", "ru": "Старый квартал Ханоя" },
+      "description": {
+        "vi": "Khu phố lịch sử nổi tiếng với những con phố gắn với nghề thủ công truyền thống.",
+        "en": "The historic quarter famous for streets connected to traditional crafts and local life.",
+        "ru": "Исторический квартал, известный улицами с традиционными ремёслами и местной жизнью."
+      }
+    },
+    {
+      "id": "temple",
+      "image": "hanoi/landmark/Hanoi_Temple_of_Literature.jpg",
+      "name": { "vi": "Văn Miếu – Quốc Tử Giám", "en": "Temple of Literature", "ru": "Храм литературы" },
+      "description": {
+        "vi": "Quần thể di tích gắn với lịch sử giáo dục và truyền thống khoa bảng Việt Nam.",
+        "en": "A heritage complex tied to Vietnam's education traditions and scholarly legacy.",
+        "ru": "Комплекс памятников, связанный с историей образования и учёной традицией Вьетнама."
+      }
+    },
+    {
+      "id": "citadel",
+      "image": "hanoi/landmark/citadel.jpg",
+      "name": { "vi": "Hoàng thành Thăng Long", "en": "Thang Long Imperial Citadel", "ru": "Императорская цитадель Тхэнг Лонг" },
+      "description": {
+        "vi": "Di sản lịch sử quan trọng phản ánh nhiều giai đoạn phát triển của kinh thành Thăng Long.",
+        "en": "An important heritage site reflecting the many phases of Thăng Long's imperial city.",
+        "ru": "Важный исторический объект, отражающий разные этапы развития императорского города Тхэнг Лонг."
+      }
+    },
+    {
+      "id": "mausoleum",
+      "image": "hanoi/landmark/Ho_Chi_Minh_Mausoleum.jpg",
+      "name": { "vi": "Lăng Chủ tịch Hồ Chí Minh", "en": "Ho Chi Minh Mausoleum", "ru": "Мавзолей Хо Ши Мина" },
+      "description": {
+        "vi": "Công trình nằm tại Quảng trường Ba Đình, một địa điểm có ý nghĩa lịch sử đặc biệt.",
+        "en": "A structure located in Ba Dinh Square, an area of deep historical significance.",
+        "ru": "Здание на площади Ба Динь, имеющее особое историческое значение."
+      }
+    },
+    {
+      "id": "tran-quoc",
+      "image": "hanoi/landmark/tran_quoc.jpg",
+      "name": { "vi": "Chùa Trấn Quốc", "en": "Tran Quoc Pagoda", "ru": "Пагода Чан Куок" },
+      "description": {
+        "vi": "Ngôi chùa nổi tiếng bên Hồ Tây, gắn với lịch sử Phật giáo lâu đời của Hà Nội.",
+        "en": "A famous pagoda by West Lake, connected to Hanoi's long Buddhist history.",
+        "ru": "Знаменитая пагода у Западного озера, связанная с долгой буддийской историей Ханоя."
+      }
+    }
+  ],
+  "deepStoriesTitle": {
+    "vi": "NHỮNG CÂU CHUYỆN SAU MỖI ĐỊA DANH",
+    "en": "STORIES BEHIND EACH LANDMARK",
+    "ru": "ИСТОРИИ ЗА ДОСТОПРИМЕЧАТЕЛЬНОСТЯМИ"
+  },
+  "deepStories": [
+    {
+      "image": "hanoi/landmark/Hoan_Kiem_Lake_photo2.jpg",
+      "title": { "vi": "Hồ Hoàn Kiếm", "en": "Hoan Kiem Lake", "ru": "Озеро Хоан Кием" },
+      "p1": { "vi": "Hồ Hoàn Kiếm nằm tại trung tâm lịch sử của Hà Nội và là một trong những không gian công cộng nổi tiếng nhất của thành phố.", "en": "Hoan Kiem Lake is located in the historic center of Hanoi and is one of the most famous public spaces in the city.", "ru": "Озеро Хоан Кием расположено в историческом центре Ханоя и является одним из самых известных общественных мест города." },
+      "p2": { "vi": "Vào sáng sớm, nơi đây thường trở nên yên tĩnh, trong khi buổi tối lại trở thành một trong những khu vực nhộn nhịp nhất Hà Nội.", "en": "In the early morning, it is often quiet, while in the evening it becomes one of the liveliest areas in Hanoi.", "ru": "Рано утром здесь часто бывает тихо, а вечером это место становится одним из самых оживленных в Ханое." }
+    },
+    {
+      "image": "hanoi/landmark/Hanoi_Temple_of_Literature.jpg",
+      "title": { "vi": "Văn Miếu – Quốc Tử Giám", "en": "Temple of Literature", "ru": "Храм литературы" },
+      "p1": { "vi": "Văn Miếu được xây dựng từ thời Lý và là một trong những biểu tượng tiêu biểu cho truyền thống coi trọng giáo dục của Việt Nam.", "en": "Built during the Ly dynasty, the Temple of Literature is a prominent symbol of Vietnam's tradition of valuing education.", "ru": "Построенный во времена династии Ли, Храм литературы является выдающимся символом вьетнамской традиции уважения к образованию." },
+      "p2": { "vi": "Không gian gồm nhiều sân, hồ, bia tiến sĩ và các công trình kiến trúc cổ, thường được nhắc đến khi nói về truyền thống hiếu học của người Việt.", "en": "The space includes courtyards, lakes, doctors' steles, and ancient architecture, often mentioned when discussing the Vietnamese tradition of studiousness.", "ru": "Пространство включает дворы, озера, стелы докторов и старинную архитектуру, о которых часто вспоминают, говоря о вьетнамской традиции прилежности." }
+    }
+  ],
+  "bestSeasonTitle": {
+    "vi": "🍂 MÙA ĐẸP NHẤT ĐỂ KHÁM PHÁ HÀ NỘI",
+    "en": "🍂 THE BEST SEASON TO EXPLORE HANOI",
+    "ru": "🍂 ЛУЧШИЙ СЕЗОН ДЛЯ ИЗУЧЕНИЯ ХАНОЯ"
+  },
+  "bestSeasonText": {
+    "vi": "Nếu muốn cảm nhận rõ nét vẻ đẹp của Hà Nội, mùa thu thường là lựa chọn được nhiều du khách yêu thích. Thời tiết thường dễ chịu hơn mùa hè, không khí mát, ánh nắng nhẹ và các con phố trở nên rất đặc trưng.",
+    "en": "If you want to clearly feel the beauty of Hanoi, autumn is often the preferred choice of many tourists. The weather is usually more pleasant than summer, with cool air, soft sunlight, and highly characteristic streets.",
+    "ru": "Если вы хотите ясно почувствовать красоту Ханоя, осень часто является предпочтительным выбором многих туристов. Погода обычно приятнее летней, с прохладным воздухом, мягким солнечным светом и очень характерными улицами."
+  },
+  "seasons": [
+    {
+      "icon": "🌸",
+      "title": { "vi": "Mùa xuân", "en": "Spring", "ru": "Весна" },
+      "description": { "vi": "Không khí dịu nhẹ, cây cối xanh tươi và nhiều hoạt động đón Tết.", "en": "Gentle air, lush greenery, and many Tet holiday activities.", "ru": "Мягкий воздух, пышная зелень и множество мероприятий, посвященных празднику Тет." },
+      "image": "hanoi/season/hanoi_spring.jpg"
+    },
+    {
+      "icon": "☀️",
+      "title": { "vi": "Mùa hè", "en": "Summer", "ru": "Лето" },
+      "description": { "vi": "Thành phố xanh hơn nhưng thời tiết nóng, đôi khi có mưa lớn.", "en": "The city is greener but the weather is hot, sometimes with heavy rain.", "ru": "Город зеленее, но погода жаркая, иногда с сильными дождями." },
+      "image": "hanoi/season/hanoi_summer.jpg"
+    },
+    {
+      "icon": "🍂",
+      "title": { "vi": "Mùa thu", "en": "Autumn", "ru": "Осень" },
+      "description": { "vi": "Thời tiết dịu hơn, trời trong và nhiều góc phố trở nên đặc biệt thơ mộng.", "en": "Milder weather, clear skies, and many street corners become especially poetic.", "ru": "Более мягкая погода, ясное небо, и многие уголки улиц становятся особенно поэтичными." },
+      "image": "hanoi/season/hanoi_autumn.jpg"
+    },
+    {
+      "icon": "❄️",
+      "title": { "vi": "Mùa đông", "en": "Winter", "ru": "Зима" },
+      "description": { "vi": "Không khí se lạnh, thích hợp khám phá phố cổ và những quán cà phê nhỏ.", "en": "Chilly air, perfect for exploring the Old Quarter and small cafes.", "ru": "Прохладный воздух, идеально подходящий для изучения Старого квартала и небольших кафе." },
+      "image": "hanoi/season/hanoi_winter.jpg"
+    }
+  ],
+  "natureTitle": {
+    "vi": "THIÊN NHIÊN TRONG LÒNG THÀNH PHỐ",
+    "en": "NATURE IN THE HEART OF THE CITY",
+    "ru": "ПРИРОДА В СЕРДЦЕ ГОРОДА"
+  },
+  "natureText": {
+    "vi": "Hà Nội không chỉ có các công trình lịch sử. Những hồ nước, hàng cây, công viên và không gian ven phố tạo nên một thành phố có nhiều khoảng lặng giữa nhịp sống đô thị.",
+    "en": "Hanoi is not just about historical buildings. Lakes, tree lines, parks, and street-side spaces create a city with many quiet moments amidst the urban pace.",
+    "ru": "Ханой — это не только исторические здания. Озера, аллеи деревьев, парки и придорожные пространства создают город с множеством тихих моментов среди городского ритма."
+  },
+  "foodTitle": {
+    "vi": "ẨM THỰC HÀ NỘI",
+    "en": "HANOI CUISINE",
+    "ru": "ХАНОЙСКАЯ КУХНЯ"
+  },
+  "foodText": {
+    "vi": "Ẩm thực Hà Nội nổi bật bởi cách sử dụng nguyên liệu tương đối tinh tế và chú trọng sự cân bằng giữa vị thanh, mặn, ngọt và hương thơm của các loại rau, gia vị.",
+    "en": "Hanoi cuisine stands out for its relatively delicate use of ingredients and its focus on balancing light, salty, sweet flavors with the aroma of herbs and spices.",
+    "ru": "Ханойская кухня выделяется относительно деликатным использованием ингредиентов и акцентом на балансе легких, соленых, сладких вкусов с ароматом трав и специй."
+  },
+  "foods": [
+    {
+      "image": "hanoi/food/Pho_bo.jpg",
+      "name": { "vi": "Phở Hà Nội", "en": "Hanoi Pho", "ru": "Ханойский Фо" },
+      "description": { "vi": "Phở là món ăn nổi tiếng nhất. Phiên bản Hà Nội chú trọng nước dùng trong, thơm và vị thanh, kết hợp cùng hành và rau thơm.", "en": "The most famous dish. The Hanoi version focuses on a clear, fragrant, and light broth, combined with onions and herbs.", "ru": "Самое известное блюдо. Ханойская версия фокусируется на прозрачном, ароматном и легком бульоне в сочетании с луком и зеленью." },
+      "fact": { "vi": "Hương vị tiêu biểu: thanh – thơm – đậm đà", "en": "Signature taste: light – fragrant – rich", "ru": "Фирменный вкус: легкий – ароматный – насыщенный" }
+    },
+    {
+      "image": "hanoi/food/Bun_cha_Hanoi.jpg",
+      "name": { "vi": "Bún chả", "en": "Bun Cha", "ru": "Бун Ча" },
+      "description": { "vi": "Gồm thịt lợn nướng, bún tươi, nước chấm pha cùng rau sống. Thịt được nướng trên than tạo ra phần cháy cạnh hấp dẫn.", "en": "Grilled pork, fresh noodles, dipping sauce with fresh herbs. The meat is charcoal-grilled creating an attractive charred edge.", "ru": "Свинина на гриле, свежая лапша, соус для макания со свежей зеленью. Мясо жарится на углях, создавая привлекательный обугленный край." },
+      "fact": { "vi": "Một trong những món ăn đặc trưng nhất", "en": "One of the most characteristic dishes", "ru": "Одно из самых характерных блюд" }
+    },
+    {
+      "image": "hanoi/food/Cha_ca_La_Vong.jpg",
+      "name": { "vi": "Chả cá", "en": "Grilled Fish (Cha Ca)", "ru": "Жареная рыба (Ча Ка)" },
+      "description": { "vi": "Được chế biến từ cá đã ướp gia vị, làm nóng cùng thì là và hành. Dùng cùng bún, rau thơm và nước chấm mắm tôm.", "en": "Made from marinated fish, heated with dill and onions. Eaten with noodles, herbs, and shrimp paste.", "ru": "Готовится из маринованной рыбы, разогревается с укропом и луком. Едят с лапшой, зеленью и креветочной пастой." },
+      "fact": { "vi": "Một nét riêng của văn hóa ẩm thực", "en": "A unique trait of culinary culture", "ru": "Уникальная черта кулинарной культуры" }
+    }
+  ],
+  "cultureTitle": {
+    "vi": "VĂN HÓA – LINH HỒN CỦA HÀ NỘI",
+    "en": "CULTURE – THE SOUL OF HANOI",
+    "ru": "КУЛЬТУРА – ДУША ХАНОЯ"
+  },
+  "cultureIntro": {
+    "vi": "Văn hóa Hà Nội được tạo nên từ sự kết hợp giữa lịch sử lâu đời, kiến trúc, nghệ thuật, ẩm thực và đời sống thường ngày. Điều đặc biệt là những giá trị truyền thống vẫn tồn tại song song với một thành phố hiện đại.",
+    "en": "Hanoi's culture is created from a combination of long history, architecture, art, cuisine, and daily life. What's special is that traditional values still coexist with a modern city.",
+    "ru": "Культура Ханоя создана из сочетания долгой истории, архитектуры, искусства, кухни и повседневной жизни. Особенность в том, что традиционные ценности все еще сосуществуют с современным городом."
+  },
+  "cultures": [
+    {
+      "icon": "🏮",
+      "image": "hanoi/landmark/old_quarter.jpg",
+      "title": { "vi": "Phố cổ", "en": "Old Quarter", "ru": "Старый квартал" },
+      "description": { "vi": "Nơi dễ dàng cảm nhận nhịp sống truyền thống. Những con phố mang tên nghề xưa, các ngôi nhà mặt phố và hàng quán nhỏ tạo nên một không gian rất khác.", "en": "Where traditional life is easily felt. Streets named after ancient trades, street-facing houses, and small stalls create a very different space.", "ru": "Место, где легко почувствовать традиционную жизнь. Улицы, названные в честь древних ремесел, дома с фасадами на улицу и небольшие киоски создают совершенно иное пространство." }
+    },
+    {
+      "icon": "📚",
+      "image": "hanoi/landmark/Hanoi_Temple_of_Literature.jpg",
+      "title": { "vi": "Truyền thống hiếu học", "en": "Tradition of Studiousness", "ru": "Традиция прилежности" },
+      "description": { "vi": "Hà Nội từ lâu là một trung tâm giáo dục quan trọng. Văn Miếu – Quốc Tử Giám trở thành biểu tượng cho truyền thống tôn trọng tri thức.", "en": "Hanoi has long been an important educational center. The Temple of Literature became a symbol of the tradition of respecting knowledge.", "ru": "Ханой издавна был важным образовательным центром. Храм литературы стал символом традиции уважения к знаниям." }
+    },
+    {
+      "icon": "🪷",
+      "image": "hanoi/landmark/tran_quoc.jpg",
+      "title": { "vi": "Tín ngưỡng & lễ hội", "en": "Beliefs & Festivals", "ru": "Верования и фестивали" },
+      "description": { "vi": "Đình, chùa, đền và các lễ hội truyền thống là một phần quan trọng trong đời sống tinh thần, lưu giữ nhiều phong tục qua nhiều thế hệ.", "en": "Communal houses, pagodas, temples, and traditional festivals are an important part of spiritual life, preserving many customs across generations.", "ru": "Общинные дома, пагоды, храмы и традиционные фестивали являются важной частью духовной жизни, сохраняя многие обычаи из поколения в поколение." }
+    },
+    {
+      "icon": "☕",
+      "image": "hanoi/landmark/hanoi_street.jpg",
+      "title": { "vi": "Đời sống phố phường", "en": "Street Life", "ru": "Уличная жизнь" },
+      "description": { "vi": "Cà phê vỉa hè, hàng ăn nhỏ, những buổi sáng quanh hồ và nhịp sống chậm ở nhiều khu phố tạo nên nét gần gũi rất đặc trưng.", "en": "Sidewalk cafes, small eateries, mornings around the lake, and the slow pace of life in many neighborhoods create a very characteristic intimacy.", "ru": "Кафе на тротуарах, небольшие закусочные, утро у озера и неторопливый темп жизни во многих районах создают очень характерную близость." }
+    }
+  ],
+  "factText": {
+    "vi": "Hà Nội từng mang tên Thăng Long.",
+    "en": "Hanoi was once called Thăng Long.",
+    "ru": "Ханой раньше назывался Тхэнг Лонг."
+  },
+  "quiz": {
+    "vi": [
+      { "q": "Địa danh nào nổi tiếng với Tháp Rùa?", "a": ["Hồ Tây", "Hồ Hoàn Kiếm", "Hồ Trúc Bạch", "Hồ Thiền Quang"], "correct": 1 },
+      { "q": "Văn Miếu – Quốc Tử Giám gắn liền với lĩnh vực nào?", "a": ["Hàng hải", "Giáo dục", "Công nghiệp", "Nông nghiệp"], "correct": 1 }
+    ],
+    "en": [
+      { "q": "Which landmark is famous for Turtle Tower?", "a": ["West Lake", "Hoan Kiem Lake", "Truc Bach Lake", "Thien Quang Lake"], "correct": 1 },
+      { "q": "What is the Temple of Literature associated with?", "a": ["Maritime", "Education", "Industry", "Agriculture"], "correct": 1 }
+    ],
+    "ru": [
+      { "q": "Какое место известно Башней Черепахи?", "a": ["Западное озеро", "Озеро Хоанкьем", "Озеро Чукбать", "Озеро Тхиенкуанг"], "correct": 1 },
+      { "q": "С чем связан Храм Литературы?", "a": ["Мореплаванием", "Образованием", "Промышленностью", "Сельским хозяйством"], "correct": 1 }
+    ]
+  }
+}

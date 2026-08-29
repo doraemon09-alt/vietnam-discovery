@@ -1,0 +1,60 @@
+{
+  "thai-nguyen": {
+    "name": {
+      "vi": "THÁI NGUYÊN",
+      "en": "THAI NGUYEN",
+      "ru": "ТХАЙ НГУЕН"
+    },
+    "status": "coming-soon",
+    "images": []
+  },
+  "hanoi": {
+    "name": {
+      "vi": "HÀ NỘI",
+      "en": "HANOI",
+      "ru": "ХАНОЙ"
+    },
+    "status": "available",
+    "images": [
+      "assets/images/hanoi/cover.jpg",
+      "assets/images/hanoi/01.jpg",
+      "assets/images/hanoi/02.jpg"
+    ]
+  },
+  "quangninh": {
+    "name": {
+      "vi": "QUẢNG NINH",
+      "en": "QUANG NINH",
+      "ru": "КУАНГ НИНЬ"
+    },
+    "status": "available",
+    "images": []
+  },
+  "hue": {
+    "name": {
+      "vi": "HUẾ",
+      "en": "HUE",
+      "ru": "ХУЭ"
+    },
+    "status": "coming-soon",
+    "images": []
+  },
+  "nha-trang": {
+    "name": {
+      "vi": "NHA TRANG",
+      "en": "NHA TRANG",
+      "ru": "Нячанг"
+    },
+    "status": "coming-soon",
+    "images": []
+  },
+  "tp-hcm": {
+    "name": {
+      "vi": "TP. HCM",
+      "en": "HO CHI MINH CITY",
+      "ru": "Хошимин"
+    },
+    "status": "coming-soon",
+    "images": []
+  }
+}

@@ -1,0 +1,170 @@
+{
+    "stationId": "hcm",
+
+    "introTitle": {
+      "vi": "HÀ NỘI – NƠI QUÁ KHỨ GẶP GỠ HIỆN TẠI",
+      "en": "HANOI – WHERE THE PAST MEETS THE PRESENT",
+      "ru": "ХАНОЙ – МЕСТО, ГДЕ ПРОШЛОЕ ВСТРЕЧАЕТСЯ С НАСТОЯЩИМ"
+    },
+    "introText": {
+      "vi": "Hà Nội là thủ đô của Việt Nam và là một trong những thành phố có lịch sử lâu đời nhất của đất nước.<br><br>Thành phố từng mang tên Thăng Long và trải qua nhiều giai đoạn phát triển quan trọng.<br><br>Ngày nay, Hà Nội là trung tâm chính trị, văn hóa và giáo dục của Việt Nam.",
+      "en": "Hanoi is the capital of Vietnam and one of the country's oldest cities.<br><br>It was once called Thăng Long and went through many important periods of development.<br><br>Today, Hanoi is the political, cultural and educational center of Vietnam.",
+      "ru": "Ханой — столица Вьетнама и один из древнейших городов страны.<br><br>Ранее он назывался Тхэнг Лонг и пережил много важных периодов развития.<br><br>Сегодня Ханой — политический, культурный и образовательный центр Вьетнама."
+    },
+    "history": {
+      "vi": "năm lịch sử",
+      "en": "years of history",
+      "ru": "лет истории"
+    },
+    "capital": {
+      "vi": "Thủ đô Việt Nam",
+      "en": "Capital of Vietnam",
+      "ru": "Столица Вьетнама"
+    },
+    "streets": {
+      "vi": "phố phường",
+      "en": "districts and streets",
+      "ru": "улицы и кварталы"
+    },
+    "culture": {
+      "vi": "Văn hóa – lịch sử",
+      "en": "Culture and history",
+      "ru": "Культура и история"
+    },
+    "exploreTitle": {
+      "vi": "NHỮNG BIỂU TƯỢNG CỦA HÀ NỘI",
+      "en": "HANOI'S ICONS",
+      "ru": "СИМВОЛЫ ХАНОЯ"
+    },
+    "exploreText": {
+      "vi": "Hà Nội sở hữu nhiều di tích lịch sử và công trình đã trở thành biểu tượng của thủ đô.",
+      "en": "Hanoi has many historical sites and structures that have become symbols of the capital.",
+      "ru": "У Ханоя много исторических мест и построек, ставших символами столицы."
+    },
+    "seasonTitle": {
+      "vi": "HÀ NỘI QUA BỐN MÙA",
+      "en": "HANOI THROUGH THE FOUR SEASONS",
+      "ru": "ХАНОЙ В ЧЕТЫРЕ ВРЕМЕНИ ГОДА"
+    },
+    "factText": {
+      "vi": "Hà Nội từng mang tên Thăng Long.",
+      "en": "Hanoi was once called Thăng Long.",
+      "ru": "Ханой раньше назывался Тхэнг Лонг."
+    },
+    "hoanKiem": {
+      "vi": "Hồ nước nằm giữa trung tâm lịch sử Hà Nội, nổi bật với Tháp Rùa và đền Ngọc Sơn.",
+      "en": "A lake in the heart of Hanoi's historic center, famous for Turtle Tower and Ngoc Son Temple.",
+      "ru": "Озеро в центре исторического Ханоя, известное Башней Черепахи и храмом Нгок Шон."
+    },
+    "oldQuarter": {
+      "vi": "Khu phố lịch sử nổi tiếng với những con phố gắn với nghề thủ công truyền thống.",
+      "en": "The historic quarter famous for streets connected to traditional crafts and local life.",
+      "ru": "Исторический квартал, известный улицами с традиционными ремёслами и местной жизнью."
+    },
+    "temple": {
+      "vi": "Quần thể di tích gắn với lịch sử giáo dục và truyền thống khoa bảng Việt Nam.",
+      "en": "A heritage complex tied to Vietnam's education traditions and scholarly legacy.",
+      "ru": "Комплекс памятников, связанный с историей образования и учёной традицией Вьетнама."
+    },
+    "citadel": {
+      "vi": "Di sản lịch sử quan trọng phản ánh nhiều giai đoạn phát triển của kinh thành Thăng Long.",
+      "en": "An important heritage site reflecting the many phases of Thăng Long's imperial city.",
+      "ru": "Важный исторический объект, отражающий разные этапы развития императорского города Тхэнг Лонг."
+    },
+    "mausoleum": {
+      "vi": "Công trình nằm tại Quảng trường Ba Đình, một địa điểm có ý nghĩa lịch sử đặc biệt.",
+      "en": "A structure located in Ba Dinh Square, an area of deep historical significance.",
+      "ru": "Здание на площади Ба Динь, имеющее особое историческое значение."
+    },
+    "tranQuoc": {
+      "vi": "Ngôi chùa nổi tiếng bên Hồ Tây, gắn với lịch sử Phật giáo lâu đời của Hà Nội.",
+      "en": "A famous pagoda by West Lake, connected to Hanoi's long Buddhist history.",
+      "ru": "Знаменитая пагода у Западного озера, связанная с долгой буддийской историей Ханоя."
+    },
+    "hoan-kiem": {
+        "name": {
+            "vi": "Hồ Hoàn Kiếm",
+            "en": "Hoan Kiem Lake",
+            "ru": "Озеро Хоан Кием"
+        },
+        "description": {
+        "vi": "Hồ nước nằm giữa trung tâm lịch sử Hà Nội, nổi bật với Tháp Rùa và đền Ngọc Sơn.",
+        "en": "A lake in the heart of Hanoi's historic center, famous for Turtle Tower and Ngoc Son Temple.",
+        "ru": "Озеро в центре исторического Ханоя, известное Башней Черепахи и храмом Нгок Шон."
+        }
+    },
+    "old-quarter": {
+        "name": {
+            "vi": "Phố cổ Hà Nội",
+            "en": "Hanoi Old Quarter",
+            "ru": "Старый квартал Ханоя"
+        },
+        "description": {
+            "vi": "Khu phố lịch sử nổi tiếng với những con phố gắn với nghề thủ công truyền thống.",
+            "en": "The historic quarter famous for streets connected to traditional crafts and local life.",
+            "ru": "Исторический квартал, известный улицами с традиционными ремёслами и местной жизнью."
+        }
+    },
+    "temple": {
+        "name": {
+            "vi": "Văn Miếu – Quốc Tử Giám",
+            "en": "Temple of Literature",
+            "ru": "Храм литературы"
+        },
+        "description": {
+            "vi": "Quần thể di tích gắn với lịch sử giáo dục và truyền thống khoa bảng Việt Nam.",
+            "en": "A heritage complex tied to Vietnam's education traditions and scholarly legacy.",
+            "ru": "Комплекс памятников, связанный с историей образования и учёной традицией Вьетнама."
+        }
+    },
+    "citadel": {
+        "name": {
+            "vi": "Hoàng thành Thăng Long",
+            "en": "Thang Long Imperial Citadel",
+            "ru": "Императорская цитадель Тхэнг Лонг"
+        },
+        "description": {
+            "vi": "Di sản lịch sử quan trọng phản ánh nhiều giai đoạn phát triển của kinh thành Thăng Long.",
+            "en": "An important heritage site reflecting the many phases of Thăng Long's imperial city.",
+            "ru": "Важный исторический объект, отражающий разные этапы развития императорского города Тхэнг Лонг."
+        }
+    },
+    "mausoleum": {
+        "name": {
+            "vi": "Lăng Chủ tịch Hồ Chí Minh",
+            "en": "Ho Chi Minh Mausoleum",
+            "ru": "Мавзолей Хо Ши Мина"
+        },
+        "description": {
+            "vi": "Công trình nằm tại Quảng trường Ba Đình, một địa điểm có ý nghĩa lịch sử đặc biệt.",
+            "en": "A structure located in Ba Dinh Square, an area of deep historical significance.",
+            "ru": "Здание на площади Ба Динь, имеющее особое историческое значение."
+        }
+    },
+    "tran-quoc": {
+        "name": {
+            "vi": "Chùa Trấn Quốc",
+            "en": "Tran Quoc Pagoda",
+            "ru": "Пагода Чан Куок"
+        },
+        "description": {
+            "vi": "Ngôi chùa nổi tiếng bên Hồ Tây, gắn với lịch sử Phật giáo lâu đời của Hà Nội.",
+            "en": "A famous pagoda by West Lake, connected to Hanoi's long Buddhist history.",
+            "ru": "Знаменитая пагода у Западного озера, связанная с долгой буддийской историей Ханоя."
+        }
+    },
+    "quiz": {
+            "vi": [
+                { "q": "Địa danh nào nổi tiếng với Tháp Rùa?", "a": ["Hồ Tây", "Hồ Hoàn Kiếm", "Hồ Trúc Bạch", "Hồ Thiền Quang"], "correct": 1 },
+                { "q": "Văn Miếu – Quốc Tử Giám gắn liền với lĩnh vực nào?", "a": ["Hàng hải", "Giáo dục", "Công nghiệp", "Nông nghiệp"], "correct": 1 }
+            ],
+            "en": [
+                { "q": "Which landmark is famous for Turtle Tower?", "a": ["West Lake", "Hoan Kiem Lake", "Truc Bach Lake", "Thien Quang Lake"], "correct": 1 },
+                { "q": "What is the Temple of Literature associated with?", "a": ["Maritime", "Education", "Industry", "Agriculture"], "correct": 1 }
+            ],
+            "ru": [
+                { "q": "Какое место известно Башней Черепахи?", "a": ["Западное озеро", "Озеро Хоанкьем", "Озеро Чукбать", "Озеро Тхиенкуанг"], "correct": 1 },
+                { "q": "С чем связан Храм Литературы?", "a": ["Мореплаванием", "Образованием", "Промышленностью", "Сельским хозяйством"], "correct": 1 }
+            ]
+    }
+}

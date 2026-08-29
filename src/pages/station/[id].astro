@@ -1,0 +1,525 @@
+---
+import Layout from '../../layouts/layout.astro';
+import passportData from '../../data/passport.json';
+import '../../styles/places.css';
+
+interface LocalizedText {
+  vi: string;
+  en: string;
+  ru: string;
+}
+
+interface StationData {
+  stationId?: string;
+  stationName?: LocalizedText;
+  coverImage?: string;
+  introImage?: string;
+  introTitle?: LocalizedText;
+  introText?: LocalizedText;
+  stats?: { num: string; text: LocalizedText }[];
+  exploreTitle?: LocalizedText;
+  exploreText?: LocalizedText;
+  places?: { id: string; image?: string; name: LocalizedText; description: LocalizedText }[];
+  deepStoriesTitle?: LocalizedText;
+  deepStories?: { image?: string; title: LocalizedText; p1: LocalizedText; p2: LocalizedText }[];
+  seasonTitle?: LocalizedText;
+  bestSeasonTitle?: LocalizedText;
+  bestSeasonText?: LocalizedText;
+  seasons?: { icon: string; title: LocalizedText; description: LocalizedText; image?: string }[];
+  natureTitle?: LocalizedText;
+  natureText?: LocalizedText;
+  foodTitle?: LocalizedText;
+  foodText?: LocalizedText;
+  foods?: { image?: string; name: LocalizedText; description: LocalizedText; fact: LocalizedText }[];
+  cultureTitle?: LocalizedText;
+  cultureIntro?: LocalizedText;
+  cultures?: { icon: string; image?: string; title: LocalizedText; description: LocalizedText }[];
+  factText?: LocalizedText;
+  quiz?: Record<string, { q: string; a: string[]; correct: number }[]>;
+  [key: string]: any;
+}
+
+const DEFAULT_IMAGE = '/images/Logo_CTN.png';
+
+const normalizeImage = (value: unknown): string => {
+  if (typeof value !== 'string') return DEFAULT_IMAGE;
+  const trimmed = value.trim();
+  if (!trimmed) return DEFAULT_IMAGE;
+  if (trimmed.startsWith('http://') || trimmed.startsWith('https://') || trimmed.startsWith('/')) {
+    return trimmed;
+  }
+  return `/images/${trimmed}`;
+};
+
+const getLocaleText = (value: any, lang: string): string => {
+  if (!value || typeof value !== 'object') return '';
+  return value[lang] ?? value.vi ?? value.en ?? value.ru ?? '';
+};
+
+export async function getStaticPaths() {
+  const files = import.meta.glob<{ default: StationData }>('../../data/stations/*.json', { eager: true });
+  
+  return Object.entries(files).map(([filePath, fileContent]) => {
+    const fileNameId = filePath.split('/').pop()?.replace('.json', '') || 'unknown';
+    const finalId = fileContent.default.stationId || fileNameId;
+
+    return {
+      params: { id: finalId },
+      props: { data: fileContent.default },
+    };
+  });
+}
+
+
+const { data } = Astro.props ?? { data: {} };
+const stationData = data as StationData;
+const sId = typeof stationData.stationId === 'string' ? stationData.stationId : 'unknown';
+const preferredLang = (Astro.url?.searchParams.get('lang') ?? 'vi') as 'vi' | 'en' | 'ru';
+const coverImg = normalizeImage(stationData.coverImage || DEFAULT_IMAGE);
+const introImg = normalizeImage(stationData.introImage || stationData.coverImage || DEFAULT_IMAGE);
+const finalPlaces = Array.isArray(stationData.places) ? stationData.places : [];
+const finalStats = Array.isArray(stationData.stats) ? stationData.stats : [];
+const deepStories = Array.isArray(stationData.deepStories) ? stationData.deepStories : [];
+const seasons = Array.isArray(stationData.seasons) ? stationData.seasons : [];
+const foods = Array.isArray(stationData.foods) ? stationData.foods : [];
+const cultures = Array.isArray(stationData.cultures) ? stationData.cultures : [];
+---
+
+<Layout title={sId ? `${sId.toUpperCase()} - Station` : 'Station'}>
+  <nav id="mainNav">
+    <div class="logo">VIETNAM DISCOVERY</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#intro" id="navIntro">GIỚI THIỆU</a>
+      <a href="#explore" id="navExplore">DANH LAM</a>
+      <a href="#nature" id="navNature">THIÊN NHIÊN</a>
+      <a href="#food" id="navFood">ẨM THỰC</a>
+      <a href="#culture" id="navCulture">VĂN HÓA</a>
+      <a href="#quiz" id="navQuiz">QUIZ</a>
+    </div>
+    <div class="nav-right">
+      <select class="nav-language" id="langSelect">
+        <option value="vi">VI</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
+      <a href="/passport" class="passport-button" id="passportBtn">🎫 PASSPORT</a>
+    </div>
+  </nav>
+
+  <header class="hero" style={`background-image: linear-gradient(rgba(20,10,7,0.42),rgba(20,10,7,0.72)), url('${coverImg}');`}>
+    <div class="hero-content visible" id="heroContent">
+      <div class="station">STATION {sId?.toUpperCase()}</div>
+      <h1 id="heroTitle">Đang tải...</h1>
+      <div class="hero-subtitle" id="heroSubtitle">...</div>
+    </div>
+  </header>
+
+  <section id="intro">
+    <div class="intro">
+      <div class="reveal-left">
+        <div class="section-label2">STATION {sId?.toUpperCase()}</div>
+        <h2 class="section-title" id="introTitle">{getLocaleText(stationData.introTitle, preferredLang)}</h2>
+        <p class="section-text" id="introText" set:html={getLocaleText(stationData.introText, preferredLang)}></p>
+
+        {finalStats.length > 0 && (
+          <div class="stats" id="statsContainer">
+            {finalStats.map((stat: any, index: number) => (
+              <div class="stat reveal" data-stat-index={index}>
+                <strong>{stat.num}</strong>
+                  <span class="stat-text-json">{getLocaleText(stat.text, preferredLang)}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      <div
+        class="intro-image reveal-right"
+        style={`background-image: linear-gradient(rgba(20,10,7,0.08),rgba(20,10,7,0.12)), url('${introImg}'); background-size: cover; background-position: center;`}
+      ></div>
+    </div>
+  </section>
+
+  {finalPlaces.length > 0 && (
+    <section class="explore" id="explore">
+      <div class="section-label1">EXPLORE</div>
+      <h2 class="section-title reveal" id="exploreTitle">{getLocaleText(stationData.exploreTitle, preferredLang)}</h2>
+      <p class="section-text reveal" id="exploreText">{getLocaleText(stationData.exploreText, preferredLang)}</p>
+
+      <div class="place-grid" id="placeGrid">
+        {finalPlaces.map((place: any, index: number) => (
+          <article class="place" data-place-index={index}>
+            <img
+              src={normalizeImage(place.image || `${place.id}.jpg`)}
+              alt={getLocaleText(place.name, preferredLang)}
+              onerror={`this.onerror=null; this.src='${DEFAULT_IMAGE}';`}
+            />
+            <div class="place-content">
+              <div class="place-number">0{index + 1}</div>
+              <h3 class="place-name-json">{getLocaleText(place.name, preferredLang)}</h3>
+              <p class="place-desc-json">{getLocaleText(place.description, preferredLang)}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {deepStories.length > 0 && (
+    <section class="detail-section" id="detailSection">
+      <div class="section-label2">DISCOVER</div>
+      <h2 class="section-title reveal" id="detailTitle">{getLocaleText(stationData.deepStoriesTitle, preferredLang)}</h2>
+      {deepStories.map((story: any, index: number) => (
+        <div class={`detail-grid ${index % 2 === 1 ? 'reverse' : ''}`} data-story-index={index}>
+          <div class="detail-image">
+            <img src={normalizeImage(story.image)} alt={getLocaleText(story.title, preferredLang)} onerror={`this.onerror=null; this.src='${DEFAULT_IMAGE}';`} />
+          </div>
+          <div class="detail-content">
+            <h3 class="story-title">{getLocaleText(story.title, preferredLang)}</h3>
+            <p class="story-p1">{getLocaleText(story.p1, preferredLang)}</p>
+            <p class="story-p2">{getLocaleText(story.p2, preferredLang)}</p>
+          </div>
+        </div>
+      ))}
+    </section>
+  )}
+
+  {seasons.length > 0 && (
+    <section class="seasons" id="nature">
+      <div class="section-label1">{getLocaleText(stationData.seasonTitle, preferredLang) || 'SEASONS'}</div>
+      <h2 class="section-title reveal" id="natureTitle">{getLocaleText(stationData.natureTitle, preferredLang)}</h2>
+      <p class="section-text reveal" id="natureText">{getLocaleText(stationData.natureText, preferredLang)}</p>
+      <div class="season-grid">
+        {seasons.map((season: any, index: number) => (
+          <div class="season" data-season-index={index}>
+            <img src={normalizeImage(season.image)} alt={getLocaleText(season.title, preferredLang)} onerror={`this.onerror=null; this.src='${DEFAULT_IMAGE}';`} />
+            <div class="season-content">
+              <div class="icon">{season.icon}</div>
+              <h3 class="season-title">{getLocaleText(season.title, preferredLang)}</h3>
+              <p class="season-desc">{getLocaleText(season.description, preferredLang)}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      {(stationData.bestSeasonTitle || stationData.bestSeasonText) && (
+        <div class="best-season">
+          <h3 class="section-label2" id="bestSeasonTitle">{getLocaleText(stationData.bestSeasonTitle, preferredLang)}</h3>
+          <p id="bestSeasonText">{getLocaleText(stationData.bestSeasonText, preferredLang)}</p>
+        </div>
+      )}
+    </section>
+  )}
+
+  {foods.length > 0 && (
+    <section class="food" id="food">
+      <div class="section-label2" id="foodLabel">TASTE OF {sId?.toUpperCase()}</div>
+      <h2 class="section-title reveal" id="foodTitle">{getLocaleText(stationData.foodTitle, preferredLang)}</h2>
+      <p class="section-text reveal" id="foodText">{getLocaleText(stationData.foodText, preferredLang)}</p>
+
+      <div class="food-grid">
+        {foods.map((food: any, index: number) => (
+          <div class="food-card" data-food-index={index}>
+            <img src={normalizeImage(food.image)} alt={getLocaleText(food.name, preferredLang)} onerror={`this.onerror=null; this.src='${DEFAULT_IMAGE}';`} />
+            <div class="food-info">
+              <h3 class="food-name-json">{getLocaleText(food.name, preferredLang)}</h3>
+              <p class="food-desc-json">{getLocaleText(food.description, preferredLang)}</p>
+              <div class="fact food-fact-json">{getLocaleText(food.fact, preferredLang)}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {cultures.length > 0 && (
+    <section class="culture" id="culture">
+      <div class="section-label1">CULTURE</div>
+      <h2 class="section-title reveal" id="cultureTitle">{getLocaleText(stationData.cultureTitle, preferredLang)}</h2>
+      <p class="culture-intro reveal" id="cultureIntro">{getLocaleText(stationData.cultureIntro, preferredLang)}</p>
+
+      <div class="culture-grid">
+        {cultures.map((culture: any, index: number) => (
+          <div class="culture-card" data-culture-index={index}>
+            <img src={normalizeImage(culture.image)} alt={getLocaleText(culture.title, preferredLang)} onerror={`this.onerror=null; this.src='${DEFAULT_IMAGE}';`} />
+            <div class="culture-info">
+              <div class="icon">{culture.icon}</div>
+              <h3 class="culture-title-json">{getLocaleText(culture.title, preferredLang)}</h3>
+              <p class="culture-desc-json">{getLocaleText(culture.description, preferredLang)}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {(stationData.factText || stationData.factText?.vi) && (
+    <section class="facts">
+      <div class="section-label2">FACT</div>
+      <h2 class="section-title reveal">TRUTH</h2>
+      <div class="fact-box reveal">
+        <p id="factText">{getLocaleText(stationData.factText, 'vi')}</p>
+      </div>
+    </section>
+  )}
+
+  <!--section class="qr-section" id="qrSection">
+    <div class="section-label2" id="qrLabel">SCAN THE STORY</div>
+    <h2 class="section-title reveal" id="qrTitle">DISCOVER MORE</h2>
+    <div class="qr-wrapper">
+      <img id="qr" src={DEFAULT_IMAGE} alt="Station QR" />
+    </div>
+    <--p class="qr-note" id="qrNote">Visit the passport to save this station and continue the Vietnam Discovery journey.-->
+  <-->
+
+  <section class="quiz" id="quiz">
+    <div class="section-label1" id="quizLabel">🎯 CHALLENGE</div>
+    <h2 class="section-title" id="quizSectionTitle">KIỂM TRA KIẾN THỨC</h2>
+    <div class="quiz-box">
+      <div class="progress" id="progress">QUESTION 1 / 3</div>
+      <div class="question" id="question">Đang tải câu hỏi...</div>
+      <div class="answers" id="answers"></div>
+      <div class="quiz-message" id="quizMessage"></div>
+    </div>
+  </section>
+
+  <section class="completed" id="completed" style="display:none; text-align:center; padding:60px;">
+    <h2 id="completedTitle" style="font-family:serif; color:var(--red); font-size:40px;">🎉 STATION COMPLETED!</h2>
+    <p id="completedDesc">Bạn đã hoàn thành chặng đường này.</p>
+    <a href="/passport" id="completedPassportBtn" class="passport-button" style="display:inline-block; margin-top:20px;">🎫 XEM HỘ CHIẾU</a>
+  </section>
+
+  <script define:vars={{ stationData, sId, finalStats, finalPlaces, deepStories, seasons, foods, cultures, DEFAULT_IMAGE }}>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang') || 'vi';
+      const safeLang = ['vi', 'en', 'ru'].includes(lang) ? lang : 'vi';
+
+      const getText = (obj, fallback = '') => {
+        if (!obj || typeof obj !== 'object') return fallback;
+        return obj[safeLang] ?? obj.vi ?? obj.en ?? obj.ru ?? fallback;
+      };
+
+      const setText = (id, value, html = false) => {
+        const el = document.getElementById(id);
+        if (!el || !value) return;
+        if (html) {
+          el.innerHTML = value;
+        } else {
+          el.textContent = value;
+        }
+      };
+
+      const navTexts = {
+        vi: { intro: 'GIỚI THIỆU', explore: 'DANH LAM', nature: 'THIÊN NHIÊN', food: 'ẨM THỰC', culture: 'VĂN HÓA', quiz: 'QUIZ' },
+        en: { intro: 'ABOUT', explore: 'LANDMARKS', nature: 'NATURE', food: 'FOOD', culture: 'CULTURE', quiz: 'QUIZ' },
+        ru: { intro: 'ВВЕДЕНИЕ', explore: 'МЕСТА', nature: 'ПРИРОДА', food: 'ЕДА', culture: 'КУЛЬТУРА', quiz: 'ВИКТОРИНА' },
+      }[safeLang];
+
+      if (navTexts) {
+        const navMap = { navIntro: 'intro', navExplore: 'explore', navNature: 'nature', navFood: 'food', navCulture: 'culture', navQuiz: 'quiz' };
+        Object.entries(navMap).forEach(([id, key]) => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = navTexts[key];
+        });
+      }
+
+      const stationName = getText(stationData.stationName, sId.toUpperCase());
+      document.getElementById('heroTitle').textContent = stationName;
+      setText('heroSubtitle', getText(stationData.introTitle));
+      setText('introTitle', getText(stationData.introTitle));
+      setText('introText', getText(stationData.introText), true);
+
+      if (finalStats.length > 0) {
+        document.querySelectorAll('.stat').forEach((el) => {
+          const idx = el.getAttribute('data-stat-index');
+          const item = finalStats[idx];
+          if (item && item.text) {
+            const text = el.querySelector('.stat-text-json');
+            if (text) text.textContent = getText(item.text);
+          }
+        });
+      }
+
+      if (finalPlaces.length > 0) {
+        document.querySelectorAll('.place').forEach((el) => {
+          const idx = el.getAttribute('data-place-index');
+          const item = finalPlaces[idx];
+          if (!item) return;
+          const name = el.querySelector('.place-name-json');
+          const desc = el.querySelector('.place-desc-json');
+          if (name) name.textContent = getText(item.name);
+          if (desc) desc.textContent = getText(item.description);
+        });
+        setText('exploreTitle', getText(stationData.exploreTitle));
+        setText('exploreText', getText(stationData.exploreText));
+      }
+
+      if (deepStories.length > 0) {
+        setText('detailTitle', getText(stationData.deepStoriesTitle));
+        document.querySelectorAll('.detail-grid').forEach((el) => {
+          const idx = Number(el.getAttribute('data-story-index') || 0);
+          const item = deepStories[idx];
+          if (!item) return;
+          const title = el.querySelector('.story-title');
+          const p1 = el.querySelector('.story-p1');
+          const p2 = el.querySelector('.story-p2');
+          if (title) title.textContent = getText(item.title);
+          if (p1) p1.textContent = getText(item.p1);
+          if (p2) p2.textContent = getText(item.p2);
+        });
+      }
+
+      if (seasons.length > 0) {
+        document.querySelectorAll('.season').forEach((el) => {
+          const idx = Number(el.getAttribute('data-season-index') || 0);
+          const item = seasons[idx];
+          if (!item) return;
+          const title = el.querySelector('.season-title');
+          const desc = el.querySelector('.season-desc');
+          if (title) title.textContent = getText(item.title);
+          if (desc) desc.textContent = getText(item.description);
+        });
+        setText('natureTitle', getText(stationData.natureTitle));
+        setText('natureText', getText(stationData.natureText));
+        const bestSeasonTitle = document.getElementById('bestSeasonTitle');
+        const bestSeasonText = document.getElementById('bestSeasonText');
+        if (bestSeasonTitle) bestSeasonTitle.textContent = getText(stationData.bestSeasonTitle);
+        if (bestSeasonText) bestSeasonText.textContent = getText(stationData.bestSeasonText);
+      }
+
+      if (foods.length > 0) {
+        document.getElementById('foodLabel').textContent = `TASTE OF ${stationName.toUpperCase()}`;
+        setText('foodTitle', getText(stationData.foodTitle));
+        setText('foodText', getText(stationData.foodText));
+        document.querySelectorAll('.food-card').forEach((el) => {
+          const idx = Number(el.getAttribute('data-food-index') || 0);
+          const item = foods[idx];
+          if (!item) return;
+          const name = el.querySelector('.food-name-json');
+          const desc = el.querySelector('.food-desc-json');
+          const fact = el.querySelector('.food-fact-json');
+          if (name) name.textContent = getText(item.name);
+          if (desc) desc.textContent = getText(item.description);
+          if (fact) fact.textContent = getText(item.fact);
+        });
+      }
+
+      if (cultures.length > 0) {
+        setText('cultureTitle', getText(stationData.cultureTitle));
+        setText('cultureIntro', getText(stationData.cultureIntro));
+        document.querySelectorAll('.culture-card').forEach((el) => {
+          const idx = Number(el.getAttribute('data-culture-index') || 0);
+          const item = cultures[idx];
+          if (!item) return;
+          const title = el.querySelector('.culture-title-json');
+          const desc = el.querySelector('.culture-desc-json');
+          if (title) title.textContent = getText(item.title);
+          if (desc) desc.textContent = getText(item.description);
+        });
+      }
+
+      const factText = document.getElementById('factText');
+      if (factText) factText.textContent = getText(stationData.factText);
+
+      const quizData = stationData.quiz ? stationData.quiz[lang] : null;
+      if (!quizData) {
+        document.getElementById('quiz').style.display = 'none';
+      } else {
+        let currentIndex = 0;
+        const progressEl = document.getElementById('progress');
+        const questionEl = document.getElementById('question');
+        const answersBox = document.getElementById('answers');
+        const msgEl = document.getElementById('quizMessage');
+
+        const setQuizLabel = () => {
+          const label = document.getElementById('quizLabel');
+          if (!label) return;
+          label.textContent = lang === 'vi' ? `🎯 THỬ THÁCH ${stationName.toUpperCase()}` : `🎯 ${stationName.toUpperCase()} CHALLENGE`;
+        };
+        setQuizLabel();
+
+        const quizSectionTitle = document.getElementById('quizSectionTitle');
+        if (quizSectionTitle) {
+          quizSectionTitle.textContent = lang === 'vi' ? 'KIỂM TRA KIẾN THỨC' : 'TEST YOUR KNOWLEDGE';
+        }
+
+        function renderQuiz() {
+          const q = quizData[currentIndex];
+          if (!q) return;
+          progressEl.textContent = `QUESTION ${currentIndex + 1} / ${quizData.length}`;
+          questionEl.textContent = q.q;
+          answersBox.innerHTML = '';
+          msgEl.textContent = '';
+          q.a.forEach((answerText, index) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'answer';
+            btn.style.cssText = 'padding: 17px; border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.06); color: white; text-align: left; transition: .3s;';
+            btn.textContent = answerText;
+            btn.addEventListener('click', () => checkAnswer(index, btn));
+            answersBox.appendChild(btn);
+          });
+        }
+
+        function checkAnswer(selectedIndex, btn) {
+          const q = quizData[currentIndex];
+          const allBtns = answersBox.querySelectorAll('button');
+          allBtns.forEach((b) => { b.disabled = true; });
+
+          if (selectedIndex === q.correct) {
+            btn.style.background = '#4c9a62';
+            msgEl.textContent = lang === 'vi' ? '✨ CHÍNH XÁC!' : '✨ CORRECT!';
+            setTimeout(() => {
+              currentIndex += 1;
+              if (currentIndex >= quizData.length) {
+                completeStation();
+              } else {
+                renderQuiz();
+              }
+            }, 900);
+          } else {
+            btn.style.background = '#a83232';
+            msgEl.textContent = lang === 'vi' ? '❌ Chưa chính xác!' : '❌ Not quite!';
+            setTimeout(() => {
+              btn.style.background = 'rgba(255,255,255,.06)';
+              allBtns.forEach((b) => { b.disabled = false; });
+              msgEl.textContent = '';
+            }, 700);
+          }
+        }
+
+        function completeStation() {
+          localStorage.setItem(`${sId}Completed`, 'true');
+          document.getElementById('quiz').style.display = 'none';
+          const completedSection = document.getElementById('completed');
+          if (completedSection) completedSection.style.display = 'block';
+          const completedTitle = document.getElementById('completedTitle');
+          if (completedTitle) completedTitle.textContent = lang === 'vi' ? '🎉 HOÀN THÀNH TRẠM!' : '🎉 STATION COMPLETED!';
+          const btn = document.getElementById('completedPassportBtn');
+          if (btn) btn.textContent = lang === 'vi' ? '🎫 XEM HỘ CHIẾU' : '🎫 VIEW PASSPORT';
+          completedSection?.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        renderQuiz();
+      }
+
+      document.getElementById('passportBtn')?.setAttribute('href', `/passport?lang=${lang}`);
+      document.getElementById('completedPassportBtn')?.setAttribute('href', `/passport?lang=${lang}`);
+
+      const langSelect = document.getElementById('langSelect');
+      if (langSelect) {
+        langSelect.value = lang;
+        langSelect.addEventListener('change', (event) => {
+          const target = event.target;
+          if (target instanceof HTMLSelectElement) {
+            window.location.href = `/station/${sId}?lang=${target.value}`;
+          }
+        });
+      }
+    });
+  </script>
+  <script define:vars={{ stationData, sId }}>
+    window.stationData = stationData;
+    window.sId = sId;
+  </script>
+  <script src="/js/places.js" is:inline></script>
+</Layout>

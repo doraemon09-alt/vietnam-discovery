@@ -1,0 +1,83 @@
+#languageScreen{
+    background:
+        radial-gradient(circle at 15% 20%,rgba(197,155,82,.2),transparent 25%),
+        radial-gradient(circle at 85% 80%,rgba(255,255,255,.08),transparent 25%),
+        var(--dark-red);
+}
+
+.screen-inner{
+    width:min(950px,92%);
+    animation:screenEnter 1s ease;
+}
+
+@keyframes screenEnter{
+    from{
+        opacity:0;
+        transform:translateY(45px) scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+.big-symbol{
+    font-size:70px;
+    color:var(--gold);
+    margin-bottom:10px;
+}
+
+.screen-inner h1{
+    color:#fff9ec;
+    font-family:"Playfair Display",serif;
+    font-size:clamp(45px,8vw,90px);
+    line-height:.95;
+    letter-spacing:5px;
+}
+
+.screen-inner .subtitle{
+    color:#eadfc9;
+    letter-spacing:4px;
+    margin:22px 0 45px;
+    font-size:13px;
+}
+
+.language-options{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
+}
+
+.language-btn{
+    min-width:220px;
+    padding:23px 28px;
+
+    color:white;
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:5px;
+
+    transition:.4s;
+}
+
+.language-btn:hover{
+    transform:translateY(-8px);
+    background:var(--gold);
+    color:var(--dark-red);
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+.language-btn strong{
+    display:block;
+    font-size:19px;
+}
+
+.language-btn span{
+    display:block;
+    margin-top:7px;
+    font-size:12px;
+    opacity:.7;
+}

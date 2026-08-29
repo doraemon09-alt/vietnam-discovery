@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+    <slot name="head" />
+</head>
+<body>
+    <!-- Page loader cổ điển của bạn -->
+    <div id="pageLoader">
+        <div class="loader-inner">
+            <div class="loader-symbol">✦</div>
+            <p>VIETNAM DISCOVERY</p>
+        </div>
+    </div>
+
+    <!-- Nội dung các trang sẽ đổ vào đây -->
+    <slot />
+
+    <!-- File JS toàn cục gốc -->
+    <script src="/js/global.js" is:inline></script>
+</body>
+</html>

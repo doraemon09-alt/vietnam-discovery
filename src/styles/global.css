@@ -1,0 +1,104 @@
+:root{
+    --red:#8d2020;
+    --dark-red:#5d1111;
+    --cream:#f5ead3;
+    --paper:#fff9ec;
+    --brown:#4b3024;
+    --green:#233c2b;
+    --gold:#e5d0a4;
+    --black:#171513;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body{
+    background:var(--cream);
+    color:var(--brown);
+    font-family:"Be Vietnam Pro",sans-serif;
+    overflow-x:hidden;
+    width: 100%;
+}
+
+
+/*pageloader*/
+#pageLoader{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    background:var(--dark-red);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    transition:.7s;
+}
+
+#pageLoader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-inner{
+    text-align:center;
+}
+
+.loader-symbol{
+    font-size:55px;
+    color:var(--gold);
+    animation:spin 2s linear infinite;
+}
+
+.loader-inner p{
+    margin-top:20px;
+    letter-spacing:4px;
+    font-size:12px;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/*screen*/
+.screen{
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    transition-behavior: allow-discrete;
+    opacity: 1;
+    visibility: visible;
+}
+
+.screen.hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@starting-style {
+    .screen {
+        opacity: 0;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,198 @@
+.passport-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 48px 24px;
+
+    background: var(--gold);
+}
+
+.passport {
+    width: min(100%, 1000px);
+
+    padding: 56px 64px;
+
+    border: 2px solid var(--red);
+    border-radius: 2px;
+
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+/*header*/
+.passport-header {
+    text-align: center;
+
+    margin-bottom: 48px;
+}
+
+.passport-header h1 {
+    margin-bottom: 8px;
+
+    font-family: "Times New Roman";
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    color: var(--red);
+}
+
+.passport-header p {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+
+    color: var(--red);
+}
+
+
+/*grid*/
+.passport-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    width: 100%;
+}
+
+
+/*ceil*/
+.passport-cell {
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px 16px;
+
+    border: 1px solid rgba(70, 45, 35, 0.25);
+    border-radius: 4px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: var(--ink);
+
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* Available destination */
+.passport-cell:not(.locked) {
+    cursor: pointer;
+}
+
+.passport-cell:not(.locked):hover {
+    transform: translateY(-3px);
+
+    background: rgba(255, 255, 255, 0.3);
+
+    border-color: var(--accent);
+}
+
+
+/* Destination name */
+.passport-cell strong {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+
+/* Coming soon */
+.passport-cell small {
+    margin-top: 10px;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+
+    color: rgba(70, 45, 35, 0.6);
+}
+
+
+/* Lock */
+.passport-cell span {
+    margin-top: 10px;
+
+    font-size: 0.9rem;
+}
+
+
+/*Locked Destination*/
+.passport-cell.locked {
+    color: rgba(70, 45, 35, 0.55);
+
+    border-color: rgba(70, 45, 35, 0.15);
+
+    cursor: default;
+}
+
+
+/*Back Button*/
+.back-button {
+    display: block;
+
+    width: fit-content;
+
+    margin: 32px auto 0;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(70, 45, 35, 0.25);
+    border-radius: 3px;
+
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+
+    color: var(--ink);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.back-button:hover {
+    background: var(--red);
+    color: var(--paper);
+}
+
+
+/*Responsive*/
+@media (max-width: 700px) {
+    .passport {
+        padding: 40px 24px;
+    }
+
+    .passport-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .passport-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .passport-page {
+        padding: 24px 16px;
+    }
+
+    .passport {
+        padding: 32px 16px;
+    }
+
+    .passport-grid {
+        grid-template-columns: 1fr;
+    }
+}
