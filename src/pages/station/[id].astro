@@ -85,7 +85,7 @@ const foods = Array.isArray(stationData.foods) ? stationData.foods : [];
 const cultures = Array.isArray(stationData.cultures) ? stationData.cultures : [];
 ---
 
-<Layout title={sId ? `${sId.toUpperCase()} - Station` : 'Station'}>
+<Layout title={stationData.stationName?.[preferredLang] || sId.toUpperCase()} >
   <nav id="mainNav">
     <div class="logo">VIETNAM DISCOVERY</div>
     <div class="nav-links" id="navLinks">
@@ -108,9 +108,9 @@ const cultures = Array.isArray(stationData.cultures) ? stationData.cultures : []
 
   <header class="hero" style={`background-image: linear-gradient(rgba(20,10,7,0.42),rgba(20,10,7,0.72)), url('${coverImg}');`}>
     <div class="hero-content visible" id="heroContent">
-      <div class="station">STATION {sId?.toUpperCase()}</div>
-      <h1 id="heroTitle">Đang tải...</h1>
-      <div class="hero-subtitle" id="heroSubtitle">...</div>
+      <div class="station">STATION {stationData.stationName?.[preferredLang]}</div>
+      <h1 id="heroTitle">{stationData.stationName?.[preferredLang] || 'Đang tải...'}</h1>
+      <div class="hero-subtitle" id="heroSubtitle">{stationData.stationSubtitle?.[preferredLang] || '...'}</div>
     </div>
   </header>
 
@@ -269,7 +269,7 @@ const cultures = Array.isArray(stationData.cultures) ? stationData.cultures : []
     </div>
     <--p class="qr-note" id="qrNote">Visit the passport to save this station and continue the Vietnam Discovery journey.-->
 
-  <section class="quiz" id="quiz">
+  <section class="quiz" id="quiz" style={`background: linear-gradient(rgba(35,60,43,.95),rgba(35,60,43,.95)), url('${introImg}') center/cover fixed;`}>
     <div class="section-label1" id="quizLabel">🎯 CHALLENGE</div>
     <h2 class="section-title" id="quizSectionTitle">KIỂM TRA KIẾN THỨC</h2>
     <div class="quiz-box">

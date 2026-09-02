@@ -753,11 +753,6 @@ section{
 ===================================================== */
 
 .quiz{
-    background:
-        linear-gradient(rgba(35,60,43,.95),rgba(35,60,43,.95)),
-        url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Hoan_Kiem_Lake_photo.jpg")
-        center/cover fixed;
-
     color:white;
     text-align:center;
 }

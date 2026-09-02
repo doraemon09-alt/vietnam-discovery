@@ -84,13 +84,13 @@
   },
   "deepStories": [
     {
-      "image": "halong_cave.jpg",
+      "image": "quangninh/landmark/halong2.jpg",
       "title": { "vi": "Vịnh Hạ Long", "en": "Ha Long Bay", "ru": "Бухта Халонг" },
       "p1": { "vi": "Vịnh Hạ Long được UNESCO công nhận là di sản thiên nhiên thế giới nhờ giá trị thẩm mỹ và địa chất độc đáo.", "en": "Ha Long Bay was recognized by UNESCO as a world heritage site thanks to its exceptional aesthetics and unique geology.", "ru": "Бухта Халонг была признана ЮНЕСКО объектом Всемирного наследия благодаря исключительной эстетике и уникальной геологии." },
       "p2": { "vi": "Hàng ngàn hòn đảo đá vôi, hang động, chế độ thủy văn và hệ sinh thái biển tạo nên cảnh quan ngoạn mục, đậm chất miền biển.", "en": "Thousands of limestone islands, caves, water systems and marine ecosystems create a magnificent landscape, deeply rooted in coastal life.", "ru": "Тысячи известняковых островов, пещер, водных систем и морских экосистем создают величественный ландшафт, основанный на жизни у моря." }
     },
     {
-      "image": "coto_beach.jpg",
+      "image": "quangninh/landmark/coto2.jpg",
       "title": { "vi": "Đảo Cô Tô", "en": "Co To Island", "ru": "Остров Кото" },
       "p1": { "vi": "Đảo Cô Tô nổi tiếng với vẻ đẹp hoang sơ, những bãi cát trắng mịn và làn nước trong xanh quanh năm.", "en": "Co To Island is famous for its wild beauty, smooth white sand beaches and clear blue waters year-round.", "ru": "Остров Кото известен своей первозданной красотой, белыми песчаными пляжами и прозрачной голубой водой круглый год." },
       "p2": { "vi": "Đây là nơi lý tưởng để đón bình minh, tham gia các hoạt động biển và trải nghiệm văn hóa đảo của người dân địa phương.", "en": "It is an ideal place to watch the sunrise, enjoy sea activities, and experience the island culture of the local people.", "ru": "Это идеальное место для наблюдения за рассветом, занятий на воде и знакомства с островной культурой местных жителей." }
@@ -101,25 +101,25 @@
       "icon": "🌤️",
       "title": { "vi": "Mùa xuân", "en": "Spring", "ru": "Весна" },
       "description": { "vi": "Thời tiết dễ chịu, ít mưa, rất phù hợp cho du lịch biển và ngắm cảnh vịnh.", "en": "Mild weather and low rainfall make it great for beach trips and bay sightseeing.", "ru": "Мягкая погода и небольшое количество дождей идеально подходят для пляжного отдыха и осмотра залива." },
-      "image": "quangninh_spring.jpg"
+      "image": "quangninh/season/qn_spring.jpg"
     },
     {
       "icon": "☀️",
       "title": { "vi": "Mùa hè", "en": "Summer", "ru": "Лето" },
       "description": { "vi": "Là mùa thường có lượng khách du lịch cao nhất, thích hợp cho biển và các hoạt động ngoài trời.", "en": "This is the peak tourist season, ideal for beaches and outdoor activities.", "ru": "Это пик туристического сезона, идеальный для пляжей и активного отдыха на открытом воздухе." },
-      "image": "quangninh_summer.jpg"
+      "image": "quangninh/season/qn_summer.jpg"
     },
     {
       "icon": "🍂",
       "title": { "vi": "Mùa thu", "en": "Autumn", "ru": "Осень" },
       "description": { "vi": "Bầu trời trong xanh, biển lặng, thích hợp cho chụp ảnh và nghỉ dưỡng yên bình.", "en": "Clear skies and calm seas make this a favorite time for photography and relaxing getaways.", "ru": "Ясное небо и спокойное море делают это отличным временем для фотографий и спокойного отдыха." },
-      "image": "quangninh_autumn.jpg"
+      "image": "quangninh/season/qn_autumn.jpg"
     },
     {
       "icon": "❄️",
       "title": { "vi": "Mùa đông", "en": "Winter", "ru": "Зима" },
       "description": { "vi": "Khí hậu mát mẻ, ít người hơn, rất thích hợp cho khám phá văn hóa và núi rừng.", "en": "Cooler weather and fewer crowds make it a great time for cultural and mountain exploration.", "ru": "Более прохладная погода и меньше туристов делают это отличным временем для культурных и горных походов." },
-      "image": "quangninh_winter.jpg"
+      "image": "quangninh/season/qn_winter.jpg"
     }
   ],
   "natureTitle": {
@@ -188,25 +188,25 @@
   "cultures": [
     {
       "icon": "🧭",
-      "image": "culture_fishing.jpg",
+      "image": "quangninh/landmark/culture_fishing.jpg",
       "title": { "vi": "Văn hóa biển", "en": "Marine culture", "ru": "Морская культура" },
       "description": { "vi": "Đời sống của cư dân ven biển gắn chặt với nghề biển, truyền thống ngư nghiệp và những câu chuyện dân gian phong phú.", "en": "The life of coastal communities is deeply linked to fishing traditions, marine heritage and rich folklore.", "ru": "Жизнь прибрежных общин тесно связана с рыболовством, морским наследием и богатым фольклором." }
     },
     {
       "icon": "⛩️",
-      "image": "yen_tu_pagoda.jpg",
+      "image": "quangninh/landmark/yentu2.jpg",
       "title": { "vi": "Tâm linh Yên Tử", "en": "Yen Tu spirituality", "ru": "Духовность Енцзу" },
       "description": { "vi": "Yên Tử là trung tâm Phật giáo của Việt Nam, lưu giữ các di tích chùa, tháp và nhiều lễ hội tôn giáo đặc sắc.", "en": "Yen Tu is the Buddhist heartland of Vietnam, preserving temples, pagodas and many meaningful religious festivals.", "ru": "Енцзу — буддийский центр Вьетнама, хранящий храмы, пагоды и множество значимых религиозных фестивалей." }
     },
     {
       "icon": "🎉",
-      "image": "festival_halong.jpg",
+      "image": "quangninh/landmark/festival_halong.jpg",
       "title": { "vi": "Lễ hội địa phương", "en": "Local festivals", "ru": "Местные фестивали" },
       "description": { "vi": "Các lễ hội như Yên Tử, đền Cửa Ông và Carnaval Hạ Long phản ánh sự phong phú của đời sống cộng đồng.", "en": "Festivals such as Yen Tu, Cua Ong Temple and Ha Long Carnival reflect the richness of community life.", "ru": "Фестивали, такие как Енцзу, храм Куа Онг и карнавал Халонг, отражают богатую общественную жизнь региона." }
     },
     {
       "icon": "🌊",
-      "image": "coastal_life.jpg",
+      "image": "quangninh/landmark/coastal_life.jpg",
       "title": { "vi": "Cuộc sống ven biển", "en": "Coastal life", "ru": "Прибрежная жизнь" },
       "description": { "vi": "Những bến cảng, chợ biển, bãi tắm và ngư dân tạo nên nhịp sống rất đặc trưng của Quảng Ninh.", "en": "Ports, coastal markets, beaches and fishing communities together create the distinctive rhythm of Quang Ninh.", "ru": "Порты, прибрежные рынки, пляжи и рыбацкие сообщества создают характерный ритм жизни Куангниня." }
     }
